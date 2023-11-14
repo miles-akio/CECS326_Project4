@@ -5,7 +5,7 @@ CECS 326 - Project 4
 
 For Project 4, we are given the topic of CPU Scheduling. In this assignment we are required to implement and design several classic CPU scheduling algorithms in order to properly execute at the right tim.
 
-Thus, the algorithm is split into 3 seperate files: FCFS.java, Priority.java and RR.java. 
+Thus, the algorithm is split into 6 seperate files: FCFS.java, Priority.java, RR.java, Algorithm.java, CPU.java, and Task.java. 
 
 For FCFS.java:
 
@@ -19,6 +19,18 @@ For Priority.java:
 For RR.java:
 
     - We created this file to implement the non-preemptive scheduling algorith when using the Round Robin method. The overall goal if this file is to run tasks according to round-robin scheduling. In this case, we import Queue, List, LinkedList and Collections for it to be implemented within this file. We create the overall Round Robin function which implements the Algorithm.java work so that creates a copy of tasks queue for sorting and will schedule forever until the quantum time is greater than 0.
+
+For Algorithm.java: 
+
+    - We created this file to be used as the interface which is represented as a generic scheduling algoritm where it invokes the scheduler function & selects the next task using the appropriate scheduling algorithm as well as the pickNextTask algorithm.
+
+For CPU.java:
+
+    - We created this file to be used as the "Virtual" CPU where it maintains the system time. Within the CPU class we run the specified task for the specified slice of time where it prints out the statement "Will run" along with the value of the task time.
+
+For Task.java:
+
+    - We created this file to be represnting of the task that is to be scheduled by the use of the scheduling algorithm. In this file, each of the public tasks will be represented as a string name, int tid, int priority and int burst whih are unique information to help distinguish each task being passed into the program. 
 
 
 Overall, when running the program, you would need to run RoadController to simulate the program. 
