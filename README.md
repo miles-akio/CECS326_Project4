@@ -5,13 +5,14 @@ CECS 326 - Project 4
 
 For Project 4, we are given the topic of CPU Scheduling. In this assignment, we are required to implement and design several classic CPU scheduling algorithms in order to properly execute at the right time.
 
-Thus, the algorithm is split into 4 separate files: FCFS.java, Priority.java, and RR.java 
+Thus, the algorithm is split into 3 separate files: FCFS.java, Priority.java, and RR.java as well as the other given files within the insructions.
 
 The way that our functions run in the order are:
 
     - Run Priority by doing java Driver PRI schedule.txt
     - Next, run FCFS by doing java Driver FCFS schedule.txt
     - Finally, RR by doing java Driver RR rr-schedule.txt
+    - The overall method to run the files by doing java Driver <Algorithm> <schedule>
 
 For FCFS.java:
 
